@@ -1,0 +1,11 @@
+<h1>I did it</h1>
+<h2> Here are all the creepers</h2>
+<h2> rails/info/routes is a simpler way of going to rails routes</h2>
+
+
+<% @creepers.each do |creep|%>
+  <a href="<%=creeper_path(creep)%>">
+    <p><%=creep.name %></p>
+    
+
+<% end %>
